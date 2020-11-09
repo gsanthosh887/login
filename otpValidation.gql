@@ -1,0 +1,9 @@
+import gql from 'graphql-tag';
+
+export const VALIDATE_OTP = gql`query validOTP($generatedOTP:String!){
+	validateOTP(generatedOTP: $generatedOTP) {
+		msg
+    response
+    token
+	}
+}`

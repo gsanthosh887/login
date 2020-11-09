@@ -1,0 +1,8 @@
+import gql from 'graphql-tag';
+
+export const  RESEND_OTP = gql`query{
+    resendOTP{
+        msg
+        response
+    }
+    }`
